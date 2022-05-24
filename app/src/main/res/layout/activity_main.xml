@@ -6,79 +6,47 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="227dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.43" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="611dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="185dp" />
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/ConstraintLayout1"
-        android:layout_width="160dp"
-        android:layout_height="132dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:background="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintEnd_toStartOf="@+id/guideline5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
 
         <TextView
-            android:id="@+id/textView7"
-            android:layout_width="66dp"
-            android:layout_height="60dp"
-            android:layout_marginStart="44dp"
-            android:layout_marginTop="8dp"
-            android:gravity="right|top"
-            android:text="22"
-            android:textColor="@color/white"
-            android:textSize="48sp"
-            app:layout_constraintBottom_toTopOf="@+id/textView8"
-            app:layout_constraintStart_toEndOf="@+id/textView4"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.8" />
-
-        <TextView
-            android:id="@+id/textView8"
-            android:layout_width="112dp"
-            android:layout_height="28dp"
-            android:layout_marginStart="13dp"
-            android:layout_marginTop="8dp"
-            android:gravity="right"
-            android:text="衡陽路"
-            android:textColor="@color/client_colors_2"
-            android:textSize="24sp"
-            app:layout_constraintStart_toEndOf="@+id/textView5"
-            app:layout_constraintTop_toBottomOf="@+id/textView7" />
-
-        <TextView
-            android:id="@+id/textView5"
-            android:layout_width="16dp"
-            android:layout_height="18dp"
-            android:layout_marginStart="12dp"
-            android:layout_marginTop="31dp"
-            android:text="往"
-            android:textColor="@color/white"
-            android:textSize="14sp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView4" />
-
-        <TextView
-            android:id="@+id/textView10"
-            android:layout_width="113dp"
-            android:layout_height="20dp"
-            android:layout_marginStart="14dp"
-            android:gravity="right"
-            android:text="Hengyan Rd."
-            android:textColor="@color/client_colors_2"
-            android:textSize="16sp"
-            app:layout_constraintStart_toEndOf="@+id/textView6"
-            app:layout_constraintTop_toBottomOf="@+id/textView8" />
-
-        <TextView
-            android:id="@+id/textView6"
-            android:layout_width="14dp"
-            android:layout_height="14dp"
-            android:layout_marginStart="12dp"
-            android:text="To"
-            android:textColor="@color/white"
-            android:textSize="10sp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView5" />
-
-        <TextView
-            android:id="@+id/textView2"
+            android:id="@+id/textView1"
             android:layout_width="37dp"
             android:layout_height="18dp"
             android:layout_marginStart="12dp"
@@ -86,127 +54,342 @@
             android:text="路 線"
             android:textColor="@color/white"
             android:textSize="14sp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintStart_toStartOf="@+id/ConstraintLayout1"
+            app:layout_constraintTop_toTopOf="@+id/ConstraintLayout1" />
 
         <TextView
-            android:id="@+id/textView4"
+            android:id="@+id/textView2"
             android:layout_width="26dp"
             android:layout_height="12dp"
             android:layout_marginStart="12dp"
             android:text="Route"
             android:textColor="@color/white"
             android:textSize="10sp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+            app:layout_constraintStart_toStartOf="@+id/ConstraintLayout1"
+            app:layout_constraintTop_toBottomOf="@+id/textView1" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="74dp"
+            android:layout_height="72dp"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="1dp"
+            android:gravity="right|top"
+            android:text="22"
+            android:textColor="@color/white"
+            android:textSize="60sp"
+            app:layout_constraintStart_toEndOf="@+id/textView1"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="16dp"
+            android:layout_height="18dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="40dp"
+            android:text="往"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="@+id/ConstraintLayout1"
+            app:layout_constraintTop_toBottomOf="@+id/textView2"/>
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:layout_marginStart="12dp"
+            android:text="To"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            app:layout_constraintStart_toStartOf="@+id/ConstraintLayout1"
+            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="112dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginEnd="16dp"
+            android:gravity="right"
+            android:text="衡陽路"
+            android:textColor="@color/client_colors_2"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="@+id/ConstraintLayout1"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="136dp"
+            android:layout_height="21dp"
+            android:layout_marginEnd="16dp"
+            android:gravity="right"
+            android:text="Hengyan Rd."
+            android:textColor="@color/client_colors_2"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/ConstraintLayout1"
+            app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/ConstraintLayout2"
-        android:layout_width="160dp"
-        android:layout_height="68dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:background="@color/client_colors_1"
+        app:layout_constraintTop_toBottomOf="@+id/guideline2"
+        app:layout_constraintBottom_toTopOf="@+id/guideline1"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ConstraintLayout1">
+        app:layout_constraintEnd_toStartOf="@+id/guideline5">
 
         <TextView
-            android:id="@+id/textView13"
+            android:id="@+id/textView8"
             android:layout_width="159dp"
-            android:layout_height="35dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="16dp"
             android:background="@color/client_colors_1"
             android:gravity="bottom|center_horizontal"
             android:text="上下車收票"
             android:textColor="@color/white"
             android:textSize="20sp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintBottom_toTopOf="@+id/textView9"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/ConstraintLayout2"
+            app:layout_constraintTop_toTopOf="@+id/ConstraintLayout2" />
 
         <TextView
-            android:id="@+id/textView14"
+            android:id="@+id/textView9"
             android:layout_width="159dp"
             android:layout_height="22dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="9dp"
             android:background="@color/client_colors_1"
             android:gravity="center_horizontal"
             android:text="Pay when Getting On and Off"
             android:textColor="@color/white"
             android:textSize="10sp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView13" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/ConstraintLayout2"
+            app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
+
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/ConstraintLayout3"
-        android:layout_width="388dp"
-        android:layout_height="138dp"
-        app:layout_constraintStart_toEndOf="@+id/ConstraintLayout1"
-        app:layout_constraintTop_toTopOf="parent">
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/background_gradient_0"
+        app:layout_constraintTop_toBottomOf="@+id/guideline2"
+        app:layout_constraintBottom_toTopOf="@+id/guideline1"
+        app:layout_constraintStart_toStartOf="@+id/guideline5"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3">
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="16dp"
+            android:gravity="center_horizontal"
+            android:text="NEXT STOP:"
+            android:textColor="@color/client_colors_3"
+            android:textSize="10sp"
+            app:layout_constraintStart_toStartOf="@+id/ConstraintLayout3"
+            app:layout_constraintTop_toTopOf="@+id/ConstraintLayout3" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="221dp"
+            android:layout_height="27dp"
+            android:layout_marginStart="39dp"
+            android:gravity="center_horizontal|bottom"
+            android:text="Xinyi-Yongkang Intersection"
+            android:textColor="@color/client_colors_2"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@+id/textView10"
+            app:layout_constraintTop_toTopOf="@+id/ConstraintLayout3" />
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="221dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="38dp"
+            android:gravity="center_horizontal"
+            android:text="(MRT Dongmen Sta.)"
+            android:textColor="@color/client_colors_2"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@+id/textView10"
+            app:layout_constraintTop_toBottomOf="@+id/textView11" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/ConstraintLayout4"
-        android:layout_width="385dp"
-        android:layout_height="61dp"
-        android:layout_marginStart="1dp"
-        android:layout_marginTop="1dp"
-        android:background="@drawable/background_gradient_0"
-        app:layout_constraintEnd_toStartOf="@+id/ConstraintLayout5"
-        app:layout_constraintStart_toEndOf="@+id/ConstraintLayout2"
-        app:layout_constraintTop_toBottomOf="@+id/ConstraintLayout3">
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline5"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+
+        <com.example.ebus.RoadCircleView
+            android:id="@+id/roadCircleView"
+            android:layout_width="403dp"
+            android:layout_height="27dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="11dp"
+            android:background="@color/black"
+            app:layout_constraintEnd_toEndOf="@+id/ConstraintLayout4"
+            app:layout_constraintStart_toStartOf="@+id/ConstraintLayout4"
+            app:layout_constraintTop_toTopOf="@+id/ConstraintLayout4" />
 
         <TextView
-            android:id="@+id/textView15"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="56dp"
-            android:gravity="center_horizontal"
-            android:text="NEXT STOP:"
-            android:textColor="@color/client_colors_3"
-            android:textSize="10sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            android:id="@+id/roadTextView1"
+            android:layout_width="25dp"
+            android:layout_height="121dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginBottom="18dp"
+            android:ems="1"
+            android:gravity="center|top"
+            android:text="吳興街站"
+            android:textColor="@color/client_colors_4"
+            app:layout_constraintBottom_toBottomOf="@+id/ConstraintLayout4"
+            app:layout_constraintStart_toStartOf="@+id/ConstraintLayout4"
+            app:layout_constraintTop_toBottomOf="@+id/roadCircleView" />
 
         <TextView
-            android:id="@+id/textView16"
-            android:layout_width="182dp"
-            android:layout_height="25dp"
-            android:layout_marginTop="6dp"
-            android:layout_marginEnd="48dp"
-            android:layout_marginBottom="1dp"
-            android:gravity="center_horizontal|bottom"
-            android:text="Xinyi-Yongkang Intersection"
+            android:id="@+id/roadTextView2"
+            android:layout_width="25dp"
+            android:layout_height="121dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="18dp"
+            android:ems="1"
+            android:gravity="center|top"
+            android:text="松仁路"
             android:textColor="@color/client_colors_2"
-            android:textSize="12sp"
-            app:layout_constraintBottom_toTopOf="@+id/textView17"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintBottom_toBottomOf="@+id/ConstraintLayout4"
+            app:layout_constraintEnd_toStartOf="@+id/roadTriangleView"
+            app:layout_constraintTop_toBottomOf="@+id/roadCircleView" />
 
         <TextView
-            android:id="@+id/textView17"
-            android:layout_width="181dp"
-            android:layout_height="22dp"
-            android:layout_marginStart="18dp"
-            android:layout_marginTop="1dp"
-            android:layout_marginEnd="21dp"
-            android:gravity="center_horizontal"
-            android:text="(MRT Dongmen Sta.)"
-            android:textColor="@color/client_colors_2"
-            android:textSize="12sp"
+            android:id="@+id/roadTextView3"
+            android:layout_width="25dp"
+            android:layout_height="121dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="18dp"
+            android:ems="1"
+            android:gravity="center|top"
+            android:text="吳興國小"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="@+id/ConstraintLayout4"
+            app:layout_constraintEnd_toStartOf="@+id/roadTriangleView2"
+            app:layout_constraintTop_toBottomOf="@+id/roadCircleView" />
+
+        <TextView
+            android:id="@+id/roadTextView4"
+            android:layout_width="25dp"
+            android:layout_height="121dp"
+            android:layout_marginEnd="11dp"
+            android:layout_marginBottom="18dp"
+            android:ems="1"
+            android:gravity="center|top"
+            android:text="信義國小"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="@+id/ConstraintLayout4"
+            app:layout_constraintEnd_toStartOf="@+id/roadTriangleView3"
+            app:layout_constraintTop_toBottomOf="@+id/roadCircleView" />
+
+        <TextView
+            android:id="@+id/roadTextView5"
+            android:layout_width="25dp"
+            android:layout_height="121dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="18dp"
+            android:ems="1"
+
+            android:gravity="center|top"
+            android:text="臺北醫學大學"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="@+id/ConstraintLayout4"
+            app:layout_constraintEnd_toStartOf="@+id/roadTriangleView4"
+            app:layout_constraintTop_toBottomOf="@+id/roadCircleView" />
+
+        <TextView
+            android:id="@+id/roadTextView6"
+            android:layout_width="25dp"
+            android:layout_height="121dp"
+            android:layout_marginEnd="11dp"
+            android:layout_marginBottom="18dp"
+            android:ems="1"
+            android:gravity="center|top"
+            android:text="景新里"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="@+id/ConstraintLayout4"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.49"
-            app:layout_constraintStart_toEndOf="@+id/textView15"
-            app:layout_constraintTop_toBottomOf="@+id/textView16" />
+            app:layout_constraintTop_toBottomOf="@+id/roadCircleView" />
+
+        <com.example.ebus.RoadTriangleView
+            android:layout_width="25dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="42dp"
+            android:layout_marginEnd="15dp"
+            app:layout_constraintEnd_toStartOf="@+id/roadTextView2"
+            app:layout_constraintTop_toBottomOf="@+id/roadCircleView" />
+
+        <com.example.ebus.RoadTriangleView
+            android:id="@+id/roadTriangleView"
+            android:layout_width="25dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="42dp"
+            android:layout_marginEnd="15dp"
+            app:layout_constraintEnd_toStartOf="@+id/roadTextView3"
+            app:layout_constraintTop_toBottomOf="@+id/roadCircleView" />
+
+        <com.example.ebus.RoadTriangleView
+            android:id="@+id/roadTriangleView2"
+            android:layout_width="25dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="42dp"
+            android:layout_marginEnd="14dp"
+            app:layout_constraintEnd_toStartOf="@+id/roadTextView4"
+            app:layout_constraintTop_toBottomOf="@+id/roadCircleView" />
+
+        <com.example.ebus.RoadTriangleView
+            android:id="@+id/roadTriangleView3"
+            android:layout_width="25dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="42dp"
+            android:layout_marginEnd="14dp"
+            app:layout_constraintEnd_toStartOf="@+id/roadTextView5"
+            app:layout_constraintTop_toBottomOf="@+id/roadCircleView" />
+
+        <com.example.ebus.RoadTriangleView
+            android:id="@+id/roadTriangleView4"
+            android:layout_width="25dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="42dp"
+            android:layout_marginEnd="13dp"
+            app:layout_constraintEnd_toStartOf="@+id/roadTextView6"
+            app:layout_constraintTop_toBottomOf="@+id/roadCircleView" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/ConstraintLayout5"
-        android:layout_width="183dp"
-        android:layout_height="200dp"
-        android:layout_marginEnd="1dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/black"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/guideline1"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintEnd_toEndOf="parent">
 
         <VideoView
             android:id="@+id/videoView"
@@ -217,5 +400,6 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
